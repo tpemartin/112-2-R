@@ -1,19 +1,16 @@
 # class 1
 
 
-- [<span class="toc-section-number">1</span> Goals](#goals)
-  - [<span class="toc-section-number">1.1</span> Google
-    classroom](#google-classroom)
-  - [<span class="toc-section-number">1.2</span> R on the
-    cloud](#r-on-the-cloud)
-  - [<span class="toc-section-number">1.3</span> AI
-    assistant](#ai-assistant)
-    - [<span class="toc-section-number">1.3.1</span> ChatGPT standalone
-      app](#chatgpt-standalone-app)
-    - [<span class="toc-section-number">1.3.2</span> OpenAI
-      API](#openai-api)
-    - [<span class="toc-section-number">1.3.3</span> Harpa chrome
-      extension (optional)](#harpa-chrome-extension-optional)
+- [class 1](#class-1)
+- [Goals](#goals)
+  - [Google classroom](#google-classroom)
+  - [R on the cloud](#r-on-the-cloud)
+  - [AI assistant](#ai-assistant)
+    - [ChatGPT standalone app](#chatgpt-standalone-app)
+    - [OpenAI API](#openai-api)
+      - [Playground](#playground)
+      - [API key (optional)](#api-key-optional)
+    - [Harpa chrome extension (optional)](#harpa-chrome-extension-optional)
 
 # Goals
 
@@ -43,7 +40,7 @@ We will use the cloud computing platform [Posit](https://posit.cloud/).
 Once you have signed up, you can join our course workspace by clicking
 the link below.
 
-<https://posit.cloud/spaces/486892/join?access_code=9mEtIgGwUQf1ccQU32AVSdO1zJr4Fotl5AMNfy-d>
+<https://posit.cloud/spaces/489032/join?access_code=bJBu7wJ8S95tXFi7kn_b0Dmg4FStW4HBZGM4THJV>
 
 ![](../img/2024-02-29-17-30-37.png)
 
