@@ -53,11 +53,19 @@ You can use ChatGPT standalone app by visiting <https://chat.openai.com/>
 
 ### OpenAI API
 
+#### Playground
+
+![](../img/2024-03-06-15-10-09.png)
+
+In each class, I will post a playground link. You can use this link to access ChatGPT record of mine.
+
+#### API key (optional)
+
 Get your api key.
 
 ![](../img/2024-03-01-14-53-44.png)
 
-### Harpa chrome extension
+### Harpa chrome extension (optional)
 
 A 3rd party application as Chrome extension that uses ChatGPT as an AI assistant.  
 

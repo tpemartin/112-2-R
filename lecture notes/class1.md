@@ -13,7 +13,7 @@
     - [<span class="toc-section-number">1.3.2</span> OpenAI
       API](#openai-api)
     - [<span class="toc-section-number">1.3.3</span> Harpa chrome
-      extension](#harpa-chrome-extension)
+      extension (optional)](#harpa-chrome-extension-optional)
 
 # Goals
 
@@ -69,11 +69,20 @@ You can use ChatGPT standalone app by visiting
 
 ### OpenAI API
 
+#### Playground
+
+![](../img/2024-03-06-15-10-09.png)
+
+In each class, I will post a playground link. You can use this link to
+access ChatGPT record of mine.
+
+#### API key (optional)
+
 Get your api key.
 
 ![](../img/2024-03-01-14-53-44.png)
 
-### Harpa chrome extension
+### Harpa chrome extension (optional)
 
 A 3rd party application as Chrome extension that uses ChatGPT as an AI
 assistant.
