@@ -11,6 +11,7 @@
       - [Playground](#playground)
       - [API key (optional)](#api-key-optional)
     - [Harpa chrome extension (optional)](#harpa-chrome-extension-optional)
+  - [Chrome installation](#chrome-installation)
 
 # Goals
 
@@ -86,3 +87,7 @@ assistant.
 
 You can install Harpa by visiting
 <https://chromewebstore.google.com/detail/harpa-ai-automation-agent/eanggfilgoajaocelnaflolkadkeghjp>
+
+## Chrome installation
+
+<https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Cwindows>
