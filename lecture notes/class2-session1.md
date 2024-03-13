@@ -11,7 +11,10 @@ API是使用者付費，可自由設定所使用的openAI models
 
 ## key concept: Preset your AI chat
 
-> 所有程式相關答案都使用R語言回答，並盡量使用tidyverse語法
+AI> 
+``` 
+所有程式相關答案都使用R語言回答，並盡量使用tidyverse語法
+```
 
 ## 如何引入外部資料到R
 
