@@ -22,7 +22,6 @@ AI>
 
 <https://data.gov.tw/>
 
-
 ### 常見資料格式
 
 ![](../img/2024-03-09-06-36-20.png)
@@ -73,10 +72,16 @@ AI >
 
 ## 活動
 
+### 示範
+
+[大專校院原住民學生及畢業生人數—按等級別與校別分](https://data.gov.tw/dataset/33514)
+
+### 練習
+
 在開放政府找一個資料，並請AI教你如何把資料引入R. 
 
 
-# Prompt Engineering
+## Prompt Engineering
 
 獲取更好結果的六種策略如下：
 
