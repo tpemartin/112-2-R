@@ -35,7 +35,7 @@ glimpse(dataNative)
 library(tidyverse)
 
 # 讀取CSV檔案
-dataNative <- read_csv("104native_A1-1.csv")
+dataNative <- read_csv("112native_A1-1.csv")
 
 ## data exploration ----
 
