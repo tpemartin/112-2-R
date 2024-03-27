@@ -7,7 +7,19 @@ AI>
 所有回答使用到程式時一律使用R, 並盡量使用tidyverse語法, 答案以R script呈現  
 ``` 
 
+## Key concept: （AI）清楚交待探索資料的物件資訊
+
+    - 使用到R環境裡什麼物件（名稱）？物件類型（class）是什麼？
+    - 要回答這個問題，需要使用這物件裡什麼元素？元素類型是什麼？
+
+先執行Three Bonus Questions程式，再執行：
+```r
+glimpse(dataNative)
+```
+
 ## Three Bonus Questions
+
+入載[112學年大專校院原住民學生及畢業生人數](https://data.gov.tw/dataset/33514)的CSV檔，並引入到R
 
 ```r
 # 前情提要----
