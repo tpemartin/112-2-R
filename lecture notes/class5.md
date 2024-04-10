@@ -49,3 +49,38 @@ AI》
 AI》
 > data frame `consumer` 有"年月底"欄位，它代表資料來自的年月，若其值有5個字則前3碼為年份，後兩碼為月份，若值有4個字則前2碼為年份後兩碼為月份; 這裡頭的年份值是正確西元年減1911的結果。請依"年月底"創造一個date time class的"日期"欄位
 
+## 範例程式
+
+```r
+
+library(tidyverse)
+
+# glimpse ---- 
+glimpse(consumer)
+
+consumer |>
+  mutate(
+    信用卡循環信用餘額 = as.double(信用卡循環信用餘額)
+  ) -> 
+  consumer
+
+glimpse(consumer)
+
+# date time -----
+# 载入必要的库
+library(lubridate)
+
+# 根据"年月底"创建日期时间列
+consumer$年份 <- as.integer(substr(consumer$年月底, 1, ifelse(nchar(consumer$年月底) == 5, 3, 2))) + 1911
+consumer$月份 <- as.integer(substr(consumer$年月底, nchar(consumer$年月底) - 1, nchar(consumer$年月底)))
+
+# 创建日期时间列
+consumer$日期 <- ymd(paste(consumer$年份, consumer$月份, "01", sep = "-"))
+
+# 移除临时创建的列
+consumer <- subset(consumer, select = -c(年份, 月份))
+
+# 查看结果
+glimpse(consumer)
+
+```
