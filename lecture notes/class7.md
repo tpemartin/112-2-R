@@ -35,6 +35,46 @@ AI》
 
 > ```將native list中的每個資料框選出"學校名稱", "在學學生人數_博士班", "在學學生人數_碩士班", "在學學生人數_學士班","學年"欄位後，再垂直堆疊成一個資料框，並命名為`native_df` ```
 
+### 範例程式
+
+```r
+
+# Downloading and importing data from the specified URL for the academic years 104 to 112
+library(tidyverse)
+
+# Create an empty list to store the data
+native <- list()
+
+# Loop through academic years 104 to 112
+for (year in 104:112) {
+  # Construct the URL
+  url <- glue::glue("https://stats.moe.gov.tw/files/ebook/native/{year}/{year}native_A1-1.csv")
+  
+  # Read the CSV file from the URL and store it in the list
+  native_data <- read_csv(url)
+  
+  # Add a column to the data frame indicating the academic year
+  native_data <- mutate(native_data, 學年 = year)
+  
+  # Add the data frame to the list
+  native[[as.character(year)]] <- native_data
+}
+
+# Initialize an empty data frame to store the result
+native_df <- data.frame()
+
+# Loop through each data frame in the native list
+for (i in seq_along(native)) {
+  # Select columns and add the academic year
+  selected_data <- select(native[[i]], 學年, 學校名稱, 在學學生人數_博士班, 在學學生人數_碩士班, 在學學生人數_學士班)
+  # selected_data$學年 <- names(native)[i]  # Add the academic year
+  
+  # Append selected data to the native_df data frame
+  native_df <- bind_rows(native_df, selected_data)
+}
+```
+
 ## 練習
 
 [大專院校校別學生數](https://data.gov.tw/dataset/6231)
+
