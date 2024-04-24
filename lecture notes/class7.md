@@ -78,3 +78,24 @@ for (i in seq_along(native)) {
 
 [大專院校校別學生數](https://data.gov.tw/dataset/6231)
 
+### 範例程式
+
+```r
+# Downloading and importing data from the specified URL for the years 104 to 112
+library(tidyverse)
+
+# Create an empty list to store the data frames
+allStudents <- list()
+
+# Loop through years 104 to 112
+for (year in 104:112) {
+  # Construct the URL
+  url <- glue::glue("https://stats.moe.gov.tw/files/detail/{year}/{year}_student.csv")
+  
+  # Read the CSV file from the URL and store it in the list
+  student_data <- read_csv(url)
+  
+  # Add the data frame to the list
+  allStudents[[as.character(year)]] <- student_data
+}
+```
