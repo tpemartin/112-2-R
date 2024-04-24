@@ -80,6 +80,12 @@ for (i in seq_along(native)) {
 
 ### 範例程式
 
+AI》
+> 
+> download and import the following file:
+> https://stats.moe.gov.tw/files/detail/{{year}}/{{year}}_student.csv,
+> where {{year}} varies from 104 to 112. The imported data frames  should be collected within a list named allStudents.
+
 ```r
 # Downloading and importing data from the specified URL for the years 104 to 112
 library(tidyverse)
