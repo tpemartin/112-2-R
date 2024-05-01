@@ -83,6 +83,12 @@ for (year in 104:112) {
   allStudents[[as.character(year)]] <- student_data
 }
 
+# 水平合併112 -----
+
+library(readr)
+native112 <- read_csv("112native_A1-1.csv")
+allStudent112 <- read_csv("112_student.csv")
+
 # pivot longer -----
 library(tidyr)
 
