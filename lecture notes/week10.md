@@ -110,9 +110,12 @@ library(dplyr)
 
 # 將資料框根據學校名稱和等級別進行分組，對除了學年度以外的數值型欄位進行加總
 allStudent112_short <- allStudent112 %>%
-  group_by(學年度, 學校名稱, 等級別) %>%
+  group_by(學校名稱, 等級別) %>%
   summarise(across(where(is.numeric), sum, na.rm = TRUE)) %>%
   ungroup()
+
+# 移除學年度
+allStudent112_short$學年度 <- NULL
 
 # 顯示前3行資料
 glimpse(head(allStudent112_short))
