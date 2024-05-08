@@ -1,3 +1,27 @@
+# Recap
+
+## 水平合併前的身份轉換
+
+[week10 範例程式](https://github.com/tpemartin/112-2-R/blob/main/lecture%20notes/week10.md#%E7%AF%84%E4%BE%8B%E7%A8%8B%E5%BC%8F)
+
+
+# 水平合併
+
+
+## id值的一致性
+
+AI》
+```
+allStudent112_short的$等級別，要去除空白及其以前的所有字
+```
+
+AI》
+```
+native_long的$學制，要去除最後的"班"字
+```
+
+[AI》水平合併](./week11-prompt.md#水平合併112)
+
 # 函數
 
 由於程式多是一條直線式的執行（也叫single thread）到底，在每一段直線我們可以看到input（待解決任務的訊息）和output （任務解決後的產出）的影子，例如： 
