@@ -17,7 +17,7 @@ allStudent112_short的$等級別，要去除空白及其以前的所有字
 
 AI》
 ```
-native_long的$學制，要去除最後的"班"字
+native112_long的$學制，要去除最後的"班"字
 ```
 
 [AI》水平合併](./week11-prompt.md#水平合併112)
